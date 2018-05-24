@@ -9,6 +9,8 @@ services:
      - POSTGRES_USER=vainoracha
      - POSTGRES_PASSWORD=vainoracha
      - MAX_CONNECTIONS=300
+   volumes:
+     - ./docker-development-database-config.sql:/docker-entrypoint-initdb.d/setup.sql
    networks:
      - compose_postgres
 

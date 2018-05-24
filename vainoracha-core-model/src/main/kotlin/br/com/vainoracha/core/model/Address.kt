@@ -1,15 +1,12 @@
-package br.com.vainorachamc.core.model
-
-import javax.persistence.Entity
-import javax.persistence.GeneratedValue
-import javax.persistence.GenerationType
-import javax.persistence.Id
+import java.util.*
+import javax.persistence.*
 
 /**
  * Created by JoaoPedroCardoso on 11/05/18
  */
 @Entity
-data class Address(@Id @GeneratedValue(strategy = GenerationType.IDENTITY) val id: String,
+@Table(name = "Address")
+data class Address(@Id @GeneratedValue(strategy = GenerationType.IDENTITY) val id: UUID,
                    val publicPlace: String,
                    val number: String,
                    val complement: String?,
