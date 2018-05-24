@@ -11,5 +11,14 @@
 
     <artifactId>vainoracha-core-service</artifactId>
 
-
+    <dependencies>
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>vainoracha-core-model</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>vainoracha-core-repository</artifactId>
+        </dependency>
+    </dependencies>
 </project>

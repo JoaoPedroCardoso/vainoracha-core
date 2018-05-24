@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Configuration
 @Configuration
 @ComponentScan(basePackages = ["br.com.vainoracha.core", "br.com.vainoracha.core.service"])
 @EnableAutoConfiguration
-class VainorachaCoreApplication
+open class VainorachaCoreApplication
 
 fun main(args: Array<String>) {
     runApplication<VainorachaCoreApplication>(*args)

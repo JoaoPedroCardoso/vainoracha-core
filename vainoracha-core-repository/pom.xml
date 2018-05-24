@@ -11,5 +11,15 @@
 
     <artifactId>vainoracha-core-repository</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+        </dependency>
 
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>vainoracha-core-model</artifactId>
+        </dependency>
+    </dependencies>
 </project>
