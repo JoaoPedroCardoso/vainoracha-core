@@ -14,4 +14,5 @@ import org.springframework.web.bind.annotation.RestController
 class TestController @Autowired constructor(private val testService: TestService) : TestApi {
 
     override fun hello(@PathVariable(value = "name") name: String) = TestRepresentation(testService.hello(name).value)
+
 }

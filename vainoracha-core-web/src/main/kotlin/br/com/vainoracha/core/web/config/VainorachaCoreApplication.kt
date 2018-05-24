@@ -8,7 +8,8 @@ import org.springframework.context.annotation.Configuration
 
 @SpringBootApplication
 @Configuration
-@ComponentScan(basePackages = ["br.com.vainoracha.core", "br.com.vainoracha.core.service"])
+@ComponentScan(basePackages = ["br.com.vainoracha.core", "br.com.vainoracha.core.service",
+    "br.com.vainoracha.core.api"])
 @EnableAutoConfiguration
 open class VainorachaCoreApplication
 
