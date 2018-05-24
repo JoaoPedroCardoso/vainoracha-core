@@ -42,3 +42,6 @@ gradlew.bat
 classes/
 
 target/
+
+*/target
+*/classes
