@@ -15,4 +15,9 @@ interface TestApi {
     @ResponseBody
     @GetMapping("/hello/{name}", produces = [(MediaType.APPLICATION_JSON_UTF8_VALUE)])
     fun hello(@PathVariable(value = "name") name: String): TestRepresentation
+
+    @ResponseStatus(HttpStatus.OK)
+    @ResponseBody
+    @PutMapping("/hello/{name}", produces = [(MediaType.APPLICATION_JSON_UTF8_VALUE)])
+    fun helloPut(@PathVariable(value = "name") name: String): TestRepresentation
 }

@@ -15,4 +15,6 @@ class TestController @Autowired constructor(private val testService: TestService
 
     override fun hello(@PathVariable(value = "name") name: String) = TestRepresentation(testService.hello(name).value)
 
+    override fun helloPut(@PathVariable(value = "name") name: String) = TestRepresentation(testService.hello(name)
+        .value)
 }
